@@ -10,14 +10,15 @@
         space-x-4
       "
     >
-      <div class="flex items-center text-base justify-center sm:ml-1">
-        <p>12</p>
+      <div class="flex items-center text-base justify-center sm:ml-2">
+        <p>3</p>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="h-5 w-5 cursor-pointer hover:text-red-300 rounded-md"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
+          @click="openShoppingList"
         >
           <path
             stroke-linecap="round"
@@ -28,7 +29,14 @@
         </svg>
       </div>
       <div>
-        <a class="hover:text-red-300 cursor-pointer text-s underline"
+        <a
+          class="
+            hover:text-red-300
+            cursor-pointer
+            text-s
+            underline
+            whitespace-nowrap
+          "
           >My account</a
         >
       </div>
@@ -65,7 +73,7 @@
             lg:text-2xl
           "
         >
-          Canary Game
+          Canary Store
         </p>
       </div>
 
@@ -76,6 +84,33 @@
         <a class="hover:text-purple-800 cursor-pointer">Apparel</a>
         <a class="hover:text-purple-800 cursor-pointer">Featured Items</a>
       </div>
+      <!-- dropdown menu -->
+      <select
+        class="
+          block
+          w-52
+          text-gray-700
+          py-2
+          px-3
+          border border-gray-300
+          bg-white
+          rounded-md
+          shadow-sm
+          focus:outline-none focus:ring-primary-500 focus:border-primary-500
+          mx-1
+          md:hidden
+          lg:hidden
+          xl:hidden
+          2xl:hidden
+        "
+        name="menu"
+      >
+        <option value="home">Home</option>
+        <option value="event">Event</option>
+        <option value="accesories">Accesories</option>
+        <option value="apparel">Apparel</option>
+        <option value="parrot">Featured Items</option>
+      </select>
     </div>
   </header>
 </template>
@@ -83,7 +118,19 @@
 <script>
 export default {
   name: "NavBar",
+  data() {
+    return {
+      open: false,
+    };
+  },
+  components: {},
   props: {},
+  methods: {
+    openShoppingList() {
+      this.open = !this.open;
+      this.$emit("openModal", this.open);
+    },
+  },
 };
 </script>
 

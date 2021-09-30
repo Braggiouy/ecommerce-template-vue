@@ -1,5 +1,7 @@
 # codebay-solution
 
+## Project Created using VueJS, and TailwindCSS by Bruno Aggierni | Braggio
+
 ## Project setup
 ```
 npm install

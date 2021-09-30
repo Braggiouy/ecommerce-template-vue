@@ -1,21 +1,8 @@
 <template>
   <section>
-    <!-- Carousel section -->
-    <div
-      class="
-        max-w-full
-        bg-gray-200
-        flex
-        justify-center
-        border-b-2 border-blue-600
-        rounded-b-md
-        sm:hidden
-      "
-    >
-      <img src="../assets/ps4image.png" alt="" />
-    </div>
+    <Carousel class="sm:hidden" />
     <!-- Text section -->
-    <div>
+    <div class="p-1">
       <h2 class="text-left text-2xl sm:p-1 sm:m-5 m-1">Intro Copy Headline</h2>
       <p class="text-justify sm:p-1 sm:m-5 sm:text-sm m-1">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, harum
@@ -58,7 +45,13 @@
 </template>
 
 <script>
-export default {};
+import Carousel from "./Carousel.vue";
+export default {
+  name: "App",
+  components: {
+    Carousel,
+  },
+};
 </script>
 
 <style></style>
