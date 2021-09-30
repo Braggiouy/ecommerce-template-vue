@@ -46,23 +46,34 @@
             hover:bg-gray-700
             rounded-full
             text-base text-white
+            mr-2
           "
         />
       </div>
     </div>
 
     <!-- Second Nav Bar -->
-    <div class="bg-black">
-      <div>
-        <h1 class="text-2xl cursor-pointer">A BIG TITLE</h1>
+    <div class="bg-red-500 flex flex-row md:justify-between p-5">
+      <div class="p-1">
+        <p
+          class="
+            cursor-pointer
+            whitespace-nowrap
+            font-semibold
+            md:text-xl
+            lg:text-2xl
+          "
+        >
+          Canary Game
+        </p>
       </div>
 
-      <div class="font-semibold">
-        <a class="mr-5 hover:text-purple-600 cursor-pointer">Home</a>
-        <a class="mr-5 hover:text-purple-600 cursor-pointer">Event</a>
-        <a class="mr-5 hover:text-purple-600 cursor-pointer">Accesories</a>
-        <a class="mr-5 hover:text-purple-600 cursor-pointer">Apparel</a>
-        <a class="mr-5 hover:text-purple-600 cursor-pointer">Featured Items</a>
+      <div class="sm:hidden p-1 space-x-1 mr-1">
+        <a class="hover:text-purple-600 cursor-pointer">Home</a>
+        <a class="hover:text-purple-600 cursor-pointer">Event</a>
+        <a class="hover:text-purple-600 cursor-pointer">Accesories</a>
+        <a class="hover:text-purple-600 cursor-pointer">Apparel</a>
+        <a class="hover:text-purple-600 cursor-pointer">Featured Items</a>
       </div>
     </div>
   </header>
@@ -70,7 +81,7 @@
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: "NavBar",
   props: {},
 };
 </script>
