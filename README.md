@@ -35,6 +35,8 @@ This project is just a practice excercise. Therefore, no license is needed to us
 
 
 ## Project setup
+
+Once you clone this project, dependencies are not included, due to the size/weight of them. Therefore, the folder node_modules is not included. Follow the steps below to properly enjoy and visualize this project. 
 ```
 npm install
 ```
