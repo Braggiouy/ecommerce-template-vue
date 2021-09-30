@@ -1,5 +1,5 @@
 <template>
-  <header class="text-white bg-purple-900 body-font w-full">
+  <header class="text-white bg-blue-800 body-font w-full">
     <div
       class="
         flex flex-row
@@ -10,11 +10,11 @@
         space-x-4
       "
     >
-      <div class="flex items-center text-base justify-center">
+      <div class="flex items-center text-base justify-center sm:ml-1">
         <p>12</p>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-5 w-5 hover:bg-purple-600 rounded-md"
+          class="h-5 w-5 cursor-pointer hover:text-red-300 rounded-md"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -28,7 +28,7 @@
         </svg>
       </div>
       <div>
-        <a class="hover:text-white cursor-pointer text-s underline"
+        <a class="hover:text-red-300 cursor-pointer text-s underline"
           >My account</a
         >
       </div>
@@ -47,13 +47,14 @@
             rounded-full
             text-base text-white
             mr-2
+            p-1
           "
         />
       </div>
     </div>
 
     <!-- Second Nav Bar -->
-    <div class="bg-red-500 flex flex-row md:justify-between p-5">
+    <div class="bg-green-500 flex flex-row justify-between p-5">
       <div class="p-1">
         <p
           class="
@@ -68,12 +69,12 @@
         </p>
       </div>
 
-      <div class="sm:hidden p-1 space-x-1 mr-1">
-        <a class="hover:text-purple-600 cursor-pointer">Home</a>
-        <a class="hover:text-purple-600 cursor-pointer">Event</a>
-        <a class="hover:text-purple-600 cursor-pointer">Accesories</a>
-        <a class="hover:text-purple-600 cursor-pointer">Apparel</a>
-        <a class="hover:text-purple-600 cursor-pointer">Featured Items</a>
+      <div class="sm:hidden p-1 space-x-3 mr-1">
+        <a class="hover:text-purple-800 cursor-pointer">Home</a>
+        <a class="hover:text-purple-800 cursor-pointer">Event</a>
+        <a class="hover:text-purple-800 cursor-pointer">Accesories</a>
+        <a class="hover:text-purple-800 cursor-pointer">Apparel</a>
+        <a class="hover:text-purple-800 cursor-pointer">Featured Items</a>
       </div>
     </div>
   </header>
